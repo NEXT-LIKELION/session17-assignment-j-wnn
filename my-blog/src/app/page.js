@@ -10,7 +10,7 @@ import {
 
 // Mockup of what the API might return, including a date
 async function getPosts() {
-  const res = await fetch("http://localhost:3002/api/posts", { cache: "no-store" });
+  const res = await fetch("http://localhost:3001/api/posts", { cache: "no-store" });
   const posts = await res.json();
   // Assuming posts have a 'createdAt' or similar date field. If not, this needs adjustment.
   // For demonstration, I'll add a placeholder date if not present.
